@@ -1,6 +1,29 @@
 {
     "layers": [
         {
+            "id": "LVIS",
+            "title": "LVIS",
+            "type": "data",
+            "isDefault": false,
+            "handleAs": "xyz_raster",
+            "updateParameters": { "time": false },
+            "wmtsOptions": {
+                "layer": "LVIS",
+                "url": "https://8e9mu91qr6.execute-api.us-east-1.amazonaws.com/production/tiles/{z}/{x}/{y}.png?url=s3://cumulus-map-internal/products/AFLVIS2-CHM/LVIS2_Gabon2016_0220_R1808_038024_chm.tif&rescale=0,70&color_map=schwarzwald"
+            }
+        },
+        {
+            "id": "LVIS_WMTS",
+            "title": "LVIS_WMTS",
+            "type": "data",
+            "isDefault": false,
+            "handleAs": "wmts_raster",
+            "updateParameters": { "time": false },
+            "wmtsOptions": {
+                "layer": "LVIS_WMTS"              
+            }
+        },           
+        {
             "id": "VIIRS_SNPP_CorrectedReflectance_TrueColor",
             "title": "True Color",
             "type": "data",
