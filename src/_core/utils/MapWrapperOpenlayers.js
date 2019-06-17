@@ -2103,7 +2103,8 @@ export default class MapWrapperOpenlayers extends MapWrapper {
                     tileMatrixIds,
                     pixelRatio,
                     projectionString,
-                    context: appStrings.MAP_LIB_2D
+                    context: appStrings.MAP_LIB_2D,
+                    origFunc
                 });
             }
             return origFunc(tileCoord, pixelRatio, projectionString);

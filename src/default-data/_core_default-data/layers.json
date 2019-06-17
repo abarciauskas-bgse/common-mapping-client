@@ -9,7 +9,11 @@
             "updateParameters": { "time": false },
             "wmtsOptions": {
                 "layer": "LVIS",
-                "url": "https://8e9mu91qr6.execute-api.us-east-1.amazonaws.com/production/tiles/{z}/{x}/{y}.png?url=s3://cumulus-map-internal/products/AFLVIS2-CHM/LVIS2_Gabon2016_0220_R1808_038024_chm.tif&rescale=0,70&color_map=schwarzwald"
+                "url": "https://8e9mu91qr6.execute-api.us-east-1.amazonaws.com/production/tiles/{z}/{x}/{y}.png",
+                "urlFunctions": {
+                    "openlayers": "addCogUrl",
+                    "cesium": "addCogUrl"
+                }
             }
         },
         {

@@ -71,6 +71,10 @@ export default class TileHandler {
                 return options => {
                     return this._kvpTimeParamUrl(options);
                 };
+            case 'addCogUrl':
+                return options => {
+                    return this._addCogUrl(options);
+                };
             case appStrings.CATS_URL:
                 return options => {
                     return this._catsInterceptUrl(options);
@@ -169,6 +173,23 @@ export default class TileHandler {
                 .replace("{y}", (-tileCoord[2] - 1).toString());
         }
         return undefined;
+    }
+
+    /**
+     * construct esri xyz tile format url
+     *
+     * @static
+     * @param {object} options tile url function options
+     * @returns {string} tile url
+     * @memberof TileHandler
+     */
+    static _addCogUrl(options) {
+        let urlTemplate = options.origUrl;
+        let tileCoord = options.tileCoord;
+        let updatedUrl = options.origFunc(tileCoord, options.pixelRatio, options.projectionString);
+        let cogLocation = window.location.search;
+        updatedUrl = updatedUrl + cogLocation;
+        return updatedUrl;
     }
 
     /**
