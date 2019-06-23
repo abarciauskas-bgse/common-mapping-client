@@ -1,14 +1,14 @@
 {
     "layers": [
         {
-            "id": "LVIS",
-            "title": "LVIS",
+            "id": "UAVSAR_XYZ",
+            "title": "UAVSAR_XYZ",
             "type": "data",
             "isDefault": false,
             "handleAs": "xyz_raster",
             "updateParameters": { "time": false },
             "wmtsOptions": {
-                "layer": "LVIS",
+                "layer": "UAVSAR_XYZ",
                 "url": "https://8e9mu91qr6.execute-api.us-east-1.amazonaws.com/production/tiles/{z}/{x}/{y}.png",
                 "urlFunctions": {
                     "openlayers": "addCogUrl",
