@@ -188,7 +188,11 @@ export default class TileHandler {
         let tileCoord = options.tileCoord;
         let updatedUrl = options.origFunc(tileCoord, options.pixelRatio, options.projectionString);
         let cogLocation = window.location.search;
-        updatedUrl = updatedUrl + cogLocation;
+        if (cogLocation !== '') {
+          updatedUrl = updatedUrl + cogLocation;
+        } else {
+            updatedUrl = updatedUrl + '?url=https://s3.amazonaws.com/opendata.remotepixel.ca/uavsar/lopegeo_mlk_cog_001.tif&rescale=-1,1&color_map=schwarzwald';
+        }
         return updatedUrl;
     }
 
