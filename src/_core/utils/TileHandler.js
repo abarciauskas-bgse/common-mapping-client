@@ -75,6 +75,10 @@ export default class TileHandler {
                 return options => {
                     return this._addCogUrl(options);
                 };
+            case 'addCogUrls':
+                return options => {
+                    return this._addCogUrls(options);
+                };
             case appStrings.CATS_URL:
                 return options => {
                     return this._catsInterceptUrl(options);
@@ -173,6 +177,27 @@ export default class TileHandler {
                 .replace("{y}", (-tileCoord[2] - 1).toString());
         }
         return undefined;
+    }
+
+    /**
+     * construct esri xyz tile format url
+     *
+     * @static
+     * @param {object} options tile url function options
+     * @returns {string} tile url
+     * @memberof TileHandler
+     */
+    static _addCogUrls(options) {
+        let urlTemplate = options.origUrl;
+        let tileCoord = options.tileCoord;
+        let updatedUrl = options.origFunc(tileCoord, options.pixelRatio, options.projectionString);
+        let cogLocation = window.location.search;
+        if (cogLocation !== '') {
+          updatedUrl = updatedUrl + cogLocation;
+        } else {
+            updatedUrl = updatedUrl + '?urls=s3://cumulus-map-internal/products/AFLVIS2-CHM/LVIS2_Gabon2016_0220_R1808_038024_chm.tif,s3://cumulus-map-internal/products/AFLVIS2-CHM/LVIS2_Gabon2016_0220_R1808_038619_chm.tif&rescale=0,70&color_map=schwarzwald';
+        }
+        return updatedUrl;
     }
 
     /**

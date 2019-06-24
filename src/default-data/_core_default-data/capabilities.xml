@@ -128,7 +128,7 @@
                 <ows:LowerCorner>-180 -90</ows:LowerCorner>
                 <ows:UpperCorner>180 90</ows:UpperCorner>
             </ows:WGS84BoundingBox>
-            <ows:Identifier>LVIS_WMTS</ows:Identifier>
+            <ows:Identifier>LVIS WMTS</ows:Identifier>
             <Style isDefault="true">
             <ows:Title xml:lang="en">default</ows:Title> <ows:Identifier>default</ows:Identifier>
             </Style>
