@@ -28,6 +28,10 @@ export const URLS = {
         {
             url: "default-data/_core_default-data/layers.json",
             type: "json"
+        },
+        {
+            url: "default-data/_core_default-data/test-maap-api-nasa.xml",
+            type: "wmts/xml"
         }
     ],
     paletteConfig: "default-data/_core_default-data/palettes.json",

@@ -44,6 +44,28 @@
             }
         },
         {
+            "id": "AfriSAR_UAVSAR_Coreg_SLC",
+            "title": "AfriSAR_UAVSAR_Coreg_SLC",
+            "type": "data",
+            "isDefault": false,
+            "handleAs": "wmts_raster",
+            "updateParameters": { "time": false },
+            "wmtsOptions": {
+                "layer": "AfriSAR_UAVSAR_Coreg_SLC"
+            }
+        },
+        {
+            "id": "lvis_collection_level_2",
+            "title": "lvis_collection_level_2",
+            "type": "data",
+            "isDefault": false,
+            "handleAs": "wmts_raster",
+            "updateParameters": { "time": false },
+            "wmtsOptions": {
+                "layer": "lvis_collection_level_2"
+            }
+        },
+        {
             "id": "VIIRS_SNPP_CorrectedReflectance_TrueColor",
             "title": "True Color",
             "type": "data",
