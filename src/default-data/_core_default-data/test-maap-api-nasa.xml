@@ -72,7 +72,7 @@
          <TileMatrixSetLink>
             <TileMatrixSet>GoogleMapsCompatible</TileMatrixSet>
          </TileMatrixSetLink>
-         <ResourceURL format="png" resourceType="tile" template="http://52.90.119.181:5000/api/wmts/GetTile/{TileMatrix}/{TileCol}/{TileRow}.png?collection_name=lvis_collection_level_2&amp;collection_version=2.0.1&amp;color_map=schwarzwald&amp;rescale=-1,1" />
+         <ResourceURL format="png" resourceType="tile" template="http://52.90.119.181:5000/api/wmts/GetTile/{TileMatrix}/{TileCol}/{TileRow}.png?collection_name=lvis_collection_level_2&amp;collection_version=2.0.1&amp;color_map=schwarzwald&amp;rescale=0,70" />
       </Layer>
       <TileMatrixSet>
         <ows:Title>GoogleMapsCompatible</ows:Title>
