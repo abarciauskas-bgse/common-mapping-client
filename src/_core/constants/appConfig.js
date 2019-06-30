@@ -32,6 +32,14 @@ export const URLS = {
         {
             url: "http://52.90.119.181:5000/api/wmts/GetCapabilities",
             type: "wmts/xml"
+        },
+        // {
+        //     url: "http://52.90.119.181:5000/api/wmts/GetCapabilities?attribute[]=float,Flight%20Number,57438",
+        //     type: "wmts/xml"
+        // },
+        {
+            url: "http://52.90.119.181:5000/api/wmts/GetCapabilities?granule_ur=ILVIS2_GA2016_0308_R1611_038456",
+            type: "wmts/xml"
         }
     ],
     paletteConfig: "default-data/_core_default-data/palettes.json",

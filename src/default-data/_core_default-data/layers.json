@@ -23,6 +23,17 @@
             }
         },
         {
+            "id": "search_results",
+            "title": "search_results",
+            "type": "data",
+            "isDefault": false,
+            "handleAs": "wmts_raster",
+            "updateParameters": { "time": false },
+            "wmtsOptions": {
+                "layer": "search_results"
+            }
+        },
+        {
             "id": "Reference_Labels",
             "title": "Reference Labels",
             "type": "reference",
