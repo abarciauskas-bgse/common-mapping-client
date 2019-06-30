@@ -1,49 +1,6 @@
 {
     "layers": [
         {
-            "id": "UAVSAR XYZ",
-            "title": "UAVSAR XYZ",
-            "type": "data",
-            "isDefault": false,
-            "handleAs": "xyz_raster",
-            "updateParameters": { "time": false },
-            "wmtsOptions": {
-                "layer": "UAVSAR XYZ",
-                "url": "https://8e9mu91qr6.execute-api.us-east-1.amazonaws.com/production/tiles/{z}/{x}/{y}.png",
-                "urlFunctions": {
-                    "openlayers": "addCogUrl",
-                    "cesium": "addCogUrl"
-                }
-            }
-        },
-        {
-            "id": "LVIS XYZ Mosaic",
-            "title": "LVIS XYZ Mosaic",
-            "type": "data",
-            "isDefault": false,
-            "handleAs": "xyz_raster",
-            "updateParameters": { "time": false },
-            "wmtsOptions": {
-                "layer": "LVIS XYZ Mosaic",
-                "url": "https://vdogw58jv3.execute-api.us-east-1.amazonaws.com/aimee/mosaic/{z}/{x}/{y}.png",
-                "urlFunctions": {
-                    "openlayers": "addCogUrls",
-                    "cesium": "addCogUrls"
-                }
-            }
-        },
-        {
-            "id": "LVIS WMTS",
-            "title": "LVIS WMTS",
-            "type": "data",
-            "isDefault": false,
-            "handleAs": "wmts_raster",
-            "updateParameters": { "time": false },
-            "wmtsOptions": {
-                "layer": "LVIS WMTS"
-            }
-        },
-        {
             "id": "AfriSAR_UAVSAR_Coreg_SLC",
             "title": "AfriSAR_UAVSAR_Coreg_SLC",
             "type": "data",

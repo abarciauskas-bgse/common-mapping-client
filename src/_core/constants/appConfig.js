@@ -30,7 +30,7 @@ export const URLS = {
             type: "json"
         },
         {
-            url: "default-data/_core_default-data/test-maap-api-nasa.xml",
+            url: "http://52.90.119.181:5000/api/wmts/GetCapabilities",
             type: "wmts/xml"
         }
     ],
